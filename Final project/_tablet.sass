@@ -1,0 +1,81 @@
+@media (max-width: 1024px)
+
+    @keyframes scale-up-ver-top
+        0%
+            transform: scaleY(0.4)
+            transform-origin: 100% 0%
+
+        100%
+            transform: scaleY(1)
+            transform-origin: 100% 0%
+
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)
+
+    .header
+        &__checkbox:checked ~ .mobile-menu
+            transform: scale(1)
+
+    .mobile-menu
+        transform: scaleY(0)
+
+    .promo
+        &__info
+            margin-top: 0
+
+        &__content
+            display: flex
+            align-items: center
+            margin-left: 16px
+            animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+        &__title
+            font-size: 44px
+            line-height: 53px
+
+        &__heading
+            font-size: 24px
+            line-height: 29px
+
+    .sale
+        gap: 19px
+        &__item
+            &_big
+                min-height: 116px
+
+    .product-box
+        padding-bottom: 64px
+        &__content
+            gap: 16px
+
+    .advantages
+        gap: 48px
+        padding-top: 48px
+        padding-bottom: 64px
+
+    .button
+        margin-top: 32px
+        margin-bottom: 0
+
+    .subscribe
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        align-items: center
+        align-content: center
+        &__header
+            padding-top: 48px
+
+    .photo
+        &__face
+            padding-top: 64px
+
+    .email__subscribe
+        margin-bottom: 140px
+
+    .footer
+        display: flex
+        justify-content: space-around
+        gap: 306px
+        
